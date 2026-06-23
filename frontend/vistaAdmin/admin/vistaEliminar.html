@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Doctor</title>
+
+    <link rel="stylesheet" href="../css/styleGeneral.css">
+    <link rel="stylesheet" href="./css/adminStylesGenerales.css">
+    <link rel="stylesheet" href="./css/verMedico.css">
+    <link rel="stylesheet" href="./css/eliminarMedico.css">
+</head>
+<body>
+    <main>
+        <!-- NAV VERTICAL -->
+        <section class="contenedor-nav">
+            <div class="contenedor-logo">
+                <img src="../img/logo2.png" alt="imgen">
+                <h1>HospitalApp</h1>
+            </div>
+
+            <div class="separador separador-medio"></div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-pedir-turno">
+                            <a href="">Ver medicos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-ver-turnos">
+                            <a href="./vistaCrear.html">Crear medico</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-historial">
+                            <a href="./vistaActualizar.html">Actualizar medico</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton" id="seleccionado">
+                            <img src="../img/logo2.png" alt="icono-perfil">
+                            <a href="">Eliminar medico</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="contenedor-perfil">
+                    <div class="separador separador-completo"></div>
+                        <div class="perfil">
+                            <img src="../img/logo2.png" alt="perfil">
+                            <div id="info-perfil">
+                                <p id="nombre">Pepe J.</p>
+                                <p id="rol">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Actualizar medico -->
+        
+        <section class="contenedor-pagina">
+            <div class="cont-form formulario-doctor">
+                <h2>Crear doctor</h2>
+                <div class="espaciador"></div>
+                <div class="barra-busqueda">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21.71 20.29l-5.6-5.6A7.95 7.95 0 1 0 14 16.12l5.6 5.6c.39.39 1.02.39 1.41 0l.7-.7c.39-.39.39-1.02 0-1.41zM9.5 14A4.5 4.5 0 1 1 14 9.5 4.51 4.51 0 0 1 9.5 14z"/>
+                    </svg>
+                    <input type="text" placeholder="Buscar especialidad o médico...">
+                </div>
+
+                <div class="espaciador"></div>
+
+                <!-- Contenedor para mostrar los doctores -->
+                <section id="contenedor-doctores">
+
+                    <!-- Card de cada doctor -->
+                    <div class="tarjeta-doctor">
+                        <div class="cont cont-img">
+                            <img src="../img/img-doctor.png!sw800" alt="imagen doctor 1">
+                        </div>
+                        <div class="cont cont-info">
+                            <div>
+                                <p>Nombre: Pepe</p>
+                                <br>
+                                <p>Apellido: Rodriguez</p>
+                                <br>
+                                <p>Sector: Cardiologia</p>
+                                <br>
+                                <p>Matricula: 1234567</p>
+                            </div>
+                        </div>
+                        <div class="cont cont-hor">
+                            <p>Horarios:</p>
+                            <button class="btn button-verTurnos">Ver Horarios</button>
+                            <ul id="horarios-id1" class="horarios-oculto">
+                                <li class="horario">Lun| 13:00 | 14:00 | 15:00 | 18:00 |</li>
+                                <li class="horario">Mar| 13:00 | 15:00 | 16:00 |</li>
+                                <li class="horario">Jue| 13:00 | 14:00 | 15:00 | 18:00 |</li>
+                                <li class="horario">Sab| 13:00 | 14:00 | 15:00 |</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </main>
+</body>
