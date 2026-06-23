@@ -1,0 +1,352 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-azul-claro: #1a3d6c;
+    --color-azul-secundario: #214d86;
+    --color-blanco: #ffffff;
+    --color-gris-claro: #b1aeae;
+    --color-dorado: #c9a227;
+    --color-nav-seleccionado: #e9ecef;
+    --color-nav-hover: #146fd0;
+    --color-lupa: #888;
+    --color-borde-buscador: #ccc;
+    --color-fondo-tarjeta: #888;
+    --color-negro-principal: #111111;
+    --color-negro-secundario: #1b1b1b;
+    --color-negro-terciario: #222;
+    --color-fondo-contraste: #f4efe8;
+
+    --fuente-titulo: 'Merriweather', serif;
+    --fuente-cuerpo: 'Open-Sans', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.separador {
+    width: 100%;
+    margin: 10px 0px;
+    border-bottom: solid var(--color-blanco) 2px;
+    border-radius: 8px;
+}
+
+.separador-medio {
+    width: 90%;
+}
+
+.contenedor-nav {
+    background-color: var(--color-negro-terciario);
+    color: var(--color-blanco);
+}
+
+.contenedor-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.contenedor-logo img {
+    width: 39px;
+    height: 39px;
+    background-color: var(--color-blanco);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.contenedor-logo h1 {
+    font-family: var(--fuente-cuerpo);
+    font-size:x-large;
+}
+
+nav {
+    width: 250px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+nav li {
+    width: 100%;
+    cursor:pointer;
+}
+
+.nav-boton {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.nav-boton:hover {
+    background-color: var(--color-fondo-tarjeta);
+}
+
+.nav-boton img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-boton a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-family: var(--fuente-cuerpo);
+    transition: background-color 0.3s ease;
+}
+
+#seleccionado {
+    background-color: var(--color-nav-seleccionado);
+    border-left: 4px solid var(--color-dorado);
+}
+
+#seleccionado a {
+    color: var(--color-negro-principal  );
+}
+
+.contenedor-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contenedor-perfil img {
+    width: 44px;
+    height: 44px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px 30px;
+}
+
+#nombre {
+    color: var(--color-blanco);
+    font-family: var(--fuente-cuerpo);
+    font-size: medium;
+}
+
+#rol {
+    color: var(--color-gris-claro);
+    font-family: var(--fuente-cuerpo);
+    font-size: small;
+}
+
+/* Contenido */
+
+.texto-generales {
+    color: var(--color-blanco);
+    margin-left: 40px;
+    font-family: var(--fuente-cuerpo);
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.contenedor-pagina {
+    width: 100%;
+    background-color: var(--color-negro-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura de toda la pantalla o la que prefieras */
+}
+
+#seccion-bienvenida {
+    display: flex;
+    flex-direction: column;
+}
+
+#mensaje-bienvenida {
+    color: var(--color-blanco);
+    font-size: x-large;
+}
+
+.texto {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: var(--color-gris-claro);
+}
+
+.barra-busqueda {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 9px;
+    left: 45px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-lupa);
+}
+
+input[type="text"],
+input[type="email"]  {
+    width: 95%;
+    padding: 10px 10px 10px 40px; /* El último valor (40px) deja espacio para la lupa */
+    border: 1px solid var(--color-borde-buscador);
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Efecto al hacer clic en la barra */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: var(--color-dorado);
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+/* Seccion card especialidades */
+
+.texto-seccion {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+    font-family: var(--fuente-cuerpo);
+    font-size: 14px;
+}
+
+#seccion-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0px 40px;
+}
+
+.tarjeta-especialidad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-lupa);
+    padding: 20px;
+    width: 230px;
+    border-radius: 8px;
+}
+
+.tarjeta-especialidad__icono {
+    width: 50px;
+    height: 50px;
+}
+
+.icono-especialidad {
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta-especialidad__nombre {
+    color: var(--color-blanco);
+    font-family: var(--fuente-cuerpo);
+    font-size: larger;
+}
+
+.tarjeta-especialidad__disponibles {
+    color: var(--color-blanco);
+    font-family: var(--fuente-cuerpo);
+}
+
+/* Turnos Proximos */
+
+#seccion-turnos {
+    margin-top: auto; /* Empuja la sección hacia el fondo automáticamente */
+    margin-bottom: 20px;
+}
+
+.lista-turnos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/* Ítem individual de turno */
+.turno-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--color-fondo-tarjeta);
+    border: 0.5px solid var(--color-dorado);
+    border-radius: 8px;
+}
+
+/* Bloque de fecha (día + mes) */
+.turno-item__fecha {
+    text-align: center;
+    min-width: 36px;
+}
+
+.turno-item__fecha-dia {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-azul-secundario);
+    line-height: 1;
+}
+
+.turno-item__fecha-mes {
+    font-size: 10px;
+    color: var(--color-azul-secundario);
+    text-transform: uppercase;
+}
+
+/* Info del turno (médico + hora) */
+.turno-item__info {
+    flex: 1;
+}
+
+.turno-item__medico {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-blanco);
+}
+
+.turno-item__detalle {
+    font-size: 15px;
+    color: black;
+}
+
+.btn {
+    font-size: 17px;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.btn-cancelar{
+    background: var(--color-azul-secundario);
+    color: var(--color-blanco);
+}
+
+.btn-cancelar:hover {
+    background: #791F1F;
+    color: #ffffff;
+}

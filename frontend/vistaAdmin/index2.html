@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+
+    <link rel="stylesheet" href="css/styleGeneral.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+<body>
+    <main>
+
+        <!-- NAV VERTICAL -->
+        <section class="contenedor-nav">
+            <div class="contenedor-logo">
+                <img src="./img/logo2.png" alt="imgen">
+                <h1>HospitalApp</h1>
+            </div>
+
+            <div class="separador separador-medio"></div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <div class="nav-boton" id="seleccionado">
+                            <img src="./img/logo2.png" alt="icono-pedir-turno">
+                            <a href="pedirTurno">Pedir turno</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="./img/logo2.png" alt="icono-ver-turnos">
+                            <a href="verTurnos">Mis turnos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="./img/logo2.png" alt="icono-historial">
+                            <a href="historialMedico">Historial médico</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="./img/logo2.png" alt="icono-perfil">
+                            <a href="miPerfil">Mi perfil</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="contenedor-perfil">
+                    <div class="separador separador-completo"></div>
+                        <div class="perfil">
+                            <img src="./img/logo2.png" alt="perfil">
+                            <div id="info-perfil">
+                                <p id="nombre">Agustin M.</p>
+                                <p id="rol">Paciente</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Vista Genera -->
+        <section class="contenedor-pagina">
+            <!-- SECCION MENSAJE BIENVENIDA + BUSCADOR -->
+            <section id="seccion-bienvenida">
+                <p class="texto-generales" id="mensaje-bienvenida">Bienvenido, Agustin 👋</p>
+                <p class="texto">¿Qué especialidad necesitás hoy?</p>
+
+                <div class="barra-busqueda">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21.71 20.29l-5.6-5.6A7.95 7.95 0 1 0 14 16.12l5.6 5.6c.39.39 1.02.39 1.41 0l.7-.7c.39-.39.39-1.02 0-1.41zM9.5 14A4.5 4.5 0 1 1 14 9.5 4.51 4.51 0 0 1 9.5 14z"/>
+                    </svg>
+                    <input type="text" placeholder="Buscar especialidad o médico...">
+                </div>
+            </section>
+
+            <!-- SECCION CARD DE ESPECIALIDADES -->
+            
+            <p class="texto-seccion">ESPECIALIDADES</p>
+            <section id="seccion-especialidades">
+
+                <!-- Tarjeta: Cardiología -->
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Cardiología</p>
+                        <p class="tarjeta-especialidad__disponibles">3 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Clínica médica</p>
+                        <p class="tarjeta-especialidad__disponibles">5 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Traumatología</p>
+                        <p class="tarjeta-especialidad__disponibles">2 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Pediatría</p>
+                        <p class="tarjeta-especialidad__disponibles">4 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Neurología</p>
+                        <p class="tarjeta-especialidad__disponibles">2 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">Oftalmología</p>
+                        <p class="tarjeta-especialidad__disponibles">3 médicos disponibles</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-especialidad">
+                    <div class="tarjeta-especialidad__icono">
+                        <img class="icono-especialidad" src="./img/logo2.png" alt="icono">
+                    </div>
+                    <div class="tarjeta-especialidad__info">
+                        <p class="tarjeta-especialidad__nombre">otra cosa</p>
+                        <p class="tarjeta-especialidad__disponibles">3 médicos disponibles</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION DE PROXIMOS TURNOS -->
+            <section id="seccion-turnos">
+                <p class="texto-seccion txt-turnos">PROXIMOS TURNOS</p>
+
+                <div class="lista-turnos">
+            
+                    <!-- Turno #1 -->
+                    <div class="turno-item">
+                        <div class="turno-item__fecha">
+                            <div class="turno-item__fecha-dia">24</div>
+                            <div class="turno-item__fecha-mes">Jun</div>
+                        </div>
+                        <div class="turno-item__info">
+                            <p class="turno-item__medico">Dr. Ramírez — Cardiología</p>
+                            <span class="turno-item__detalle">10:30 hs · Consultorio 3</span>
+                        </div>
+                        <button class=" btn btn-cancelar">Ver Turno</button>
+                    </div>
+            
+                    <!-- Turno #2 -->
+                    <div class="turno-item">
+                        <div class="turno-item__fecha">
+                            <div class="turno-item__fecha-dia">02</div>
+                            <div class="turno-item__fecha-mes">Jul</div>
+                        </div>
+                        <div class="turno-item__info">
+                            <p class="turno-item__medico">Dra. López — Clínica médica</p>
+                            <span class="turno-item__detalle">09:00 hs · Consultorio 1</span>
+                        </div>
+                        <button class="btn btn-cancelar">Ver Turno</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

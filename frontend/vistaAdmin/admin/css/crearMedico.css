@@ -1,0 +1,23 @@
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid var(--color-borde-buscador);
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--color-borde-buscador);
+}
+
+.chc-especialidad {
+    display: flex;
+    flex-direction: column;
+}
+
+.espaciador {
+    height: 5px;
+}
+
+.etiqueta {
+    font-size: larger;
+    font-family: var(--fuente-cuerpo);
+}

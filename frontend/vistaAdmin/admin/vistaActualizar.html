@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Doctor</title>
+
+    <link rel="stylesheet" href="../css/styleGeneral.css">
+    <link rel="stylesheet" href="./css/adminStylesGenerales.css">
+    <link rel="stylesheet" href="./css/actualizarMedico.css">
+</head>
+<body>
+    <main>
+                        <!-- NAV VERTICAL -->
+        <section class="contenedor-nav">
+            <div class="contenedor-logo">
+                <img src="../img/logo2.png" alt="imgen">
+                <h1>HospitalApp</h1>
+            </div>
+
+            <div class="separador separador-medio"></div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-pedir-turno">
+                            <a href="./vistaAdmin.html">Ver medicos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-ver-turnos">
+                            <a href="./vistaCrear.html">Crear medico</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton" id="seleccionado">
+                            <img src="../img/logo2.png" alt="icono-historial">
+                            <a href="./vistaActualizar.html">Actualizar medico</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-boton">
+                            <img src="../img/logo2.png" alt="icono-perfil">
+                            <a href="./vistaEliminar.html">Eliminar medico</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="contenedor-perfil">
+                    <div class="separador separador-completo"></div>
+                        <div class="perfil">
+                            <img src="../img/logo2.png" alt="perfil">
+                            <div id="info-perfil">
+                                <p id="nombre">Pepe J.</p>
+                                <p id="rol">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <!-- Apartado actualizar medicos -->
+        <section class="contenedor-pagina">
+            <div class="cont-form formulario-doctor">
+                <h2>Crear doctor</h2>
+                <div class="barra-busqueda">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21.71 20.29l-5.6-5.6A7.95 7.95 0 1 0 14 16.12l5.6 5.6c.39.39 1.02.39 1.41 0l.7-.7c.39-.39.39-1.02 0-1.41zM9.5 14A4.5 4.5 0 1 1 14 9.5 4.51 4.51 0 0 1 9.5 14z"/>
+                    </svg>
+                    <input type="text" placeholder="Buscar especialidad o médico...">
+                </div>
+
+                <div class="espaciador"></div>
+
+                <form>
+                    <div class="sec-formulario">
+                        <label for="">Nombre:</label>
+                        <div class="espaciador"></div>
+                        <input type="text" placeholder="Juan">
+                    </div>
+
+                    <div class="sec-formulario">
+                        <label for="">Apellido:</label>
+                        <div class="espaciador"></div>
+                        <input type="text" placeholder="Fernandez">   
+                    </div>
+
+                    <div class="sec-formulario">
+                        <label for="">Numero matricula:</label>
+                        <div class="espaciador"></div>
+                        <input type="text" placeholder="9999999">
+                    </div>
+
+                    <div class="sec-formulario chc-especialidad">
+                        <label for="">Categoria:</label>
+                        <div class="espaciador"></div>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> Cardiologia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Traumatologia"> Traumatologia
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="..."> ...
+                        </label>
+                    </div>
+
+                    <div class="sec-formulario chc-especialidad">
+                        <label class="etiqueta" for="">Horarios:</label>
+
+                        <div class="espaciador"></div>
+
+                        <!-- Horarios del lunes -->
+                        <label for="">Lunes</label>
+
+                        <div class="espaciador"></div>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 14:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 15:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 16:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 17:00
+                        </label>
+
+                        <!-- Horarios martes -->
+                        <label for="">Martes</label>
+
+                        <div class="espaciador"></div>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 14:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 15:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 16:00
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Cardiologia"> 17:00
+                        </label>
+                    </div>
+
+                    <div class="sec-formulario">
+                        <label for="">Email:</label>
+                        <input type="email" placeholder="nombre@gmail.com">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
